@@ -38,6 +38,7 @@ Aplicar un deployment
 ```
 kubectl apply -f <nombreDelYaml>.yaml
 ```
-
 ## Services
 Para poder sacar los pods al exterior hace falta lanzar services
+kubernetes.io/docs/concepts/workloads/
+Para nosotros, el más importante de ellos es el primero: Service

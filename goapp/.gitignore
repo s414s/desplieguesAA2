@@ -1,0 +1,30 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+# Dependency directories (remove the comment below if you're not using Go modules)
+# vendor/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.sublime-workspace
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db

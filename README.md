@@ -42,3 +42,17 @@ kubectl apply -f <nombreDelYaml>.yaml
 Para poder sacar los pods al exterior hace falta lanzar services
 kubernetes.io/docs/concepts/workloads/
 Para nosotros, el más importante de ellos es el primero: Service
+
+Para borrar todos los yaml de una carpeta
+```
+kubectl delete -f .
+```
+
+## Conclusiones
+Se podría concluir que se necesita:
+-   archivo de deployment
+-   archivo de service para exporner todo
+
+lo importante es el nombre del selector
+
+mirar el ejemplo de wordpress-deployment.yml porque hace junto el service y el deployment 

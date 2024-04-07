@@ -1,0 +1,10 @@
+apiVerison: v1
+king: Pod
+metada:
+  name: darwing
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.21.4
+    ports:
+    - containerPort: 80

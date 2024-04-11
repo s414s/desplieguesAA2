@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-AA2-kubernetes
+  name: my-aa2-kubernetes
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-AA2-kubernetes
+      app: my-aa2-kubernetes
   template:
     metadata:
       labels:
-        app: my-AA2-kubernetes
+        app: my-aa2-kubernetes
     spec:
       containers:
-      - name: my-AA2-kubernetes
+      - name: my-aa2-kubernetes
         image: asalasher/nodeforAA2:v1
         ports:
         - containerPort: 3000

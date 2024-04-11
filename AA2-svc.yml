@@ -2,11 +2,11 @@
 apiVersion: v1
 king: Service
 metadata:
-  name: hello-kubernetes
+  name: my-AA2-kubernetes
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 3000
   selector:
-    app: hello-kubernetes
+    app: my-AA2-kubernetes

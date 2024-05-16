@@ -1,3 +1,14 @@
+docker run --rm -d -p 3000:3000 asalasher/nodeforaa2:v1
+ docker run --rm -d -p 8080:8080 asalasher/goforaa2:v1
+
+kubectl apply -f AA2-deployment.yaml
+
+kubectl apply -f AA2-svc.yml
+kubectl get all -o wide
+
+kubectl delete -f aa2-deployment.yaml
+kubectl delete -f AA2-svc.yml
+
 # AA2 Despliegues
 Amazon Elastic Kubernetes Service (EKS)
 
@@ -9,7 +20,11 @@ kubectl run <nombrePod> --image=nginx
 kubectl get all
 kubectl get all -o wide
 kubectl get pods -o wide
+
+kubectl get nodes
 ```
+
+Se lanza primero los pods y luego el service para sacar los pods al exterior
 
 ## Pods
 Los pods pueden tener uno o más contenedores
@@ -22,7 +37,7 @@ Desmontar un pod
 ```
 kubectl delete -f 1pod1cont.yaml
 ó
-kubectl delete pod <PodName>
+kubectl delete pod <PodName> // esto mata un pod en particular
 ```
 
 ## Deployments
